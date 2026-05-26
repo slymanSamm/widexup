@@ -182,7 +182,7 @@
 
   /* 기타 자료 그리드 — 3칸 */
   .extra-grid {
-    display: grid; grid-template-columns: repeat(3, 1fr); background: var(--surface2);
+    display: grid; grid-template-columns: repeat(4, 1fr); background: var(--surface2);
   }
 
   .res-btn-ex.has-link:hover { background: rgba(217,119,6,.05); }
@@ -190,6 +190,7 @@
   .ri-ex-1 { background: rgba(217,119,6,.12); }
   .ri-ex-2 { background: rgba(234,88,12,.10); }
   .ri-ex-3 { background: rgba(245,158,11,.12); }
+  .ri-ex-4 { background: rgba(124,58,237,.12); }
 
   .badge-amber { background: rgba(217,119,6,.1); color: var(--amber); border: 1px solid rgba(217,119,6,.25); }
   .res-badge-amber {
@@ -208,9 +209,9 @@
 
   @media (max-width: 600px) {
     .extra-grid { grid-template-columns: repeat(2, 1fr); }
-    .extra-grid .res-btn:nth-child(3) { border-bottom: none; }
     .extra-grid .res-btn:nth-child(2n) { border-right: none; }
     .extra-grid .res-btn { border-bottom: 1px solid var(--border); }
+    .extra-grid .res-btn:nth-last-child(-n+2) { border-bottom: none; }
   }
 
   /* 자료 버튼 그리드 */
@@ -472,25 +473,37 @@
       <span class="proj-theme pt-p2">마을 · 환경</span>
     </div>
     <div class="resource-grid">
-      <button class="res-btn res-btn-p2 no-link">
+      <button class="res-btn res-btn-p2 has-link"
+        data-embed="https://drive.google.com/file/d/1Zc2AkI2yRurxDqbk-B5ZLtaz2Od73MaH/preview"
+        data-link="https://drive.google.com/file/d/1Zc2AkI2yRurxDqbk-B5ZLtaz2Od73MaH/view?usp=drive_link"
+        data-title="지도안" data-proj="Project 2 · 마을을 넓히다" data-proj-class="badge-p2">
         <div class="res-icon ri-p2-1">📋</div>
         <span class="res-label">지도안</span>
-        <span class="res-badge-soon">준비 중</span>
+        <span class="res-badge-ready">열기</span>
       </button>
-      <button class="res-btn res-btn-p2 no-link">
+      <button class="res-btn res-btn-p2 has-link"
+        data-embed="https://docs.google.com/presentation/d/1thMGOmXVY3VINvVHeL3_RyJJxAnx0UnU/embed?start=false&loop=false&delayms=3000"
+        data-link="https://docs.google.com/presentation/d/1thMGOmXVY3VINvVHeL3_RyJJxAnx0UnU/edit?usp=sharing"
+        data-title="교사용 프레젠테이션" data-proj="Project 2 · 마을을 넓히다" data-proj-class="badge-p2">
         <div class="res-icon ri-p2-2">🖥️</div>
         <span class="res-label">교사용<br>프레젠테이션</span>
-        <span class="res-badge-soon">준비 중</span>
+        <span class="res-badge-ready">열기</span>
       </button>
-      <button class="res-btn res-btn-p2 no-link">
+      <button class="res-btn res-btn-p2 has-link"
+        data-embed="https://docs.google.com/presentation/d/1VRfFpIGppw4JtSXiwH0xVHO-Xsd65fIK/embed?start=false&loop=false&delayms=3000"
+        data-link="https://docs.google.com/presentation/d/1VRfFpIGppw4JtSXiwH0xVHO-Xsd65fIK/edit?usp=sharing"
+        data-title="연수자료" data-proj="Project 2 · 마을을 넓히다" data-proj-class="badge-p2">
         <div class="res-icon ri-p2-3">🎓</div>
         <span class="res-label">연수자료</span>
-        <span class="res-badge-soon">준비 중</span>
+        <span class="res-badge-ready">열기</span>
       </button>
-      <button class="res-btn res-btn-p2 no-link">
+      <button class="res-btn res-btn-p2 has-link"
+        data-embed="https://docs.google.com/document/d/1g19-3YWjZA-isGORHn-IA6eS1U-guTP-/preview"
+        data-link="https://docs.google.com/document/d/1g19-3YWjZA-isGORHn-IA6eS1U-guTP-/edit?usp=sharing"
+        data-title="학생 활동지" data-proj="Project 2 · 마을을 넓히다" data-proj-class="badge-p2">
         <div class="res-icon ri-p2-4">📝</div>
         <span class="res-label">학생<br>활동지</span>
-        <span class="res-badge-soon">준비 중</span>
+        <span class="res-badge-ready">열기</span>
       </button>
     </div>
   </div>
@@ -507,25 +520,37 @@
       <span class="proj-theme pt-p3">세계 · 문화</span>
     </div>
     <div class="resource-grid">
-      <button class="res-btn res-btn-p3 no-link">
+      <button class="res-btn res-btn-p3 has-link"
+        data-embed="https://drive.google.com/file/d/12GPWpyl_TL-IR8_r74JhY3gIHgDAx9Js/preview"
+        data-link="https://drive.google.com/file/d/12GPWpyl_TL-IR8_r74JhY3gIHgDAx9Js/view?usp=sharing"
+        data-title="지도안" data-proj="Project 3 · 세상을 넓히다" data-proj-class="badge-p3">
         <div class="res-icon ri-p3-1">📋</div>
         <span class="res-label">지도안</span>
-        <span class="res-badge-soon">준비 중</span>
+        <span class="res-badge-ready">열기</span>
       </button>
-      <button class="res-btn res-btn-p3 no-link">
+      <button class="res-btn res-btn-p3 has-link"
+        data-embed="https://docs.google.com/presentation/d/1gTdP8F4pTlbEtWhx1eHrrL-CVDfcQqdc/embed?start=false&loop=false&delayms=3000"
+        data-link="https://docs.google.com/presentation/d/1gTdP8F4pTlbEtWhx1eHrrL-CVDfcQqdc/edit?usp=sharing"
+        data-title="교사용 프레젠테이션" data-proj="Project 3 · 세상을 넓히다" data-proj-class="badge-p3">
         <div class="res-icon ri-p3-2">🖥️</div>
         <span class="res-label">교사용<br>프레젠테이션</span>
-        <span class="res-badge-soon">준비 중</span>
+        <span class="res-badge-ready">열기</span>
       </button>
-      <button class="res-btn res-btn-p3 no-link">
+      <button class="res-btn res-btn-p3 has-link"
+        data-embed="https://docs.google.com/presentation/d/1ov_tTIoE-XhcRZ46Eyc-32xbkH91qKrK/embed?start=false&loop=false&delayms=3000"
+        data-link="https://docs.google.com/presentation/d/1ov_tTIoE-XhcRZ46Eyc-32xbkH91qKrK/edit?usp=drive_link"
+        data-title="연수자료" data-proj="Project 3 · 세상을 넓히다" data-proj-class="badge-p3">
         <div class="res-icon ri-p3-3">🎓</div>
         <span class="res-label">연수자료</span>
-        <span class="res-badge-soon">준비 중</span>
+        <span class="res-badge-ready">열기</span>
       </button>
-      <button class="res-btn res-btn-p3 no-link">
+      <button class="res-btn res-btn-p3 has-link"
+        data-embed="https://docs.google.com/document/d/19KImyOccu_FoMTVe-xVtMdgzqvQ1yrXo/preview"
+        data-link="https://docs.google.com/document/d/19KImyOccu_FoMTVe-xVtMdgzqvQ1yrXo/edit?usp=sharing"
+        data-title="학생 활동지" data-proj="Project 3 · 세상을 넓히다" data-proj-class="badge-p3">
         <div class="res-icon ri-p3-4">📝</div>
         <span class="res-label">학생<br>활동지</span>
-        <span class="res-badge-soon">준비 중</span>
+        <span class="res-badge-ready">열기</span>
       </button>
     </div>
   </div>
@@ -546,22 +571,40 @@
     </div>
     <div class="extra-grid resource-grid">
 
-      <button class="res-btn res-btn-ex no-link">
+      <button class="res-btn res-btn-ex has-link"
+        data-embed="https://drive.google.com/file/d/1YBzNeVxMoX5whMTwK6lCKORmudp4VwAk/preview"
+        data-link="https://drive.google.com/file/d/1YBzNeVxMoX5whMTwK6lCKORmudp4VwAk/view?usp=drive_link"
+        data-title="학생 설문지" data-proj="기타 자료" data-proj-class="badge-amber">
         <div class="res-icon ri-ex-1">📊</div>
         <span class="res-label">학생<br>설문지</span>
-        <span class="res-badge-soon">준비 중</span>
+        <span class="res-badge-ready">열기</span>
       </button>
 
-      <button class="res-btn res-btn-ex no-link">
+      <button class="res-btn res-btn-ex has-link"
+        data-embed="https://drive.google.com/file/d/1LHQdJ9VpPq3XuKczj7bZn3pY3e5D0T90/preview"
+        data-link="https://drive.google.com/file/d/1LHQdJ9VpPq3XuKczj7bZn3pY3e5D0T90/view?usp=sharing"
+        data-title="학부모 소감문 양식" data-proj="기타 자료" data-proj-class="badge-amber">
         <div class="res-icon ri-ex-2">💌</div>
         <span class="res-label">학부모<br>소감문 양식</span>
-        <span class="res-badge-soon">준비 중</span>
+        <span class="res-badge-ready">열기</span>
       </button>
 
-      <button class="res-btn res-btn-ex no-link">
+      <button class="res-btn res-btn-ex has-link"
+        data-embed="https://docs.google.com/document/d/1yEwW8G2Zk05Jmq7EWc-JtzRWiUtBIFFL/preview"
+        data-link="https://docs.google.com/document/d/1yEwW8G2Zk05Jmq7EWc-JtzRWiUtBIFFL/edit?usp=sharing"
+        data-title="학부모 안내장" data-proj="기타 자료" data-proj-class="badge-amber">
         <div class="res-icon ri-ex-3">📢</div>
         <span class="res-label">학부모<br>안내장</span>
-        <span class="res-badge-soon">준비 중</span>
+        <span class="res-badge-ready">열기</span>
+      </button>
+
+      <button class="res-btn res-btn-ex has-link"
+        data-embed="https://drive.google.com/file/d/1JCGXYp3EtJ7V5d5loN8_oPKhn1Ab-JtO/preview"
+        data-link="https://drive.google.com/file/d/1JCGXYp3EtJ7V5d5loN8_oPKhn1Ab-JtO/view?usp=drive_link"
+        data-title="수업사례 보고서" data-proj="기타 자료" data-proj-class="badge-amber">
+        <div class="res-icon ri-ex-4">📑</div>
+        <span class="res-label">수업사례<br>보고서</span>
+        <span class="res-badge-ready">열기</span>
       </button>
 
     </div>
